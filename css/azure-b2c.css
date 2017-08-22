@@ -104,6 +104,8 @@ body {
 a {
 	color: #4696c4;
 	font-weight: bold;
+	outline: none;
+	text-decoration: none;
 }
 
 h2 {
