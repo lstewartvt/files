@@ -58,6 +58,12 @@ body {
 	width: 1440px;
 }
 
+@media (max-width: 560px) {
+	.content {
+		width: 100%;
+	}
+}
+
 @media (max-width: 1440px) {
 	body {
 		width: 100%;
@@ -65,12 +71,6 @@ body {
 
 	.content {
 		max-width: 95%;
-	}
-}
-
-@media (max-width: 560px) {
-	.content {
-		width: 100%;
 	}
 }
 
