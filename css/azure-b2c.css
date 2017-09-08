@@ -146,6 +146,10 @@ button,
 	text-align: center;
 }
 
+.create p a {
+	margin-left: 10px;
+}
+
 .header a,
 .entry-item input,
 .buttons button,
