@@ -172,6 +172,7 @@ button,
 
 .social .options button {
 	color: transparent;
+	height: 44px;
 	padding: 0;
 	position: relative;
 	text-align: left;
@@ -181,8 +182,8 @@ button,
 .social .options button:after {
 	color: #fff;
 	display: inherit;
-	left: 40px;
-	padding: 15px 20px;
+	left: 50px;
+	padding: 15px;
 	position: absolute;
 	text-align: left;
 	text-transform: uppercase;
@@ -192,7 +193,7 @@ button,
 .social .options button:before {
 	border-right: 1px solid;
 	font-family: fontawesome;
-	left: 10px;
+	left: 5px;
 }
 
 #FacebookExchange {
