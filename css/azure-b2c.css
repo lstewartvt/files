@@ -1,3 +1,4 @@
+/* Global Styles */
 @charset "UTF-8";
 
 @font-face {
@@ -146,6 +147,23 @@ button,
   padding: 20px;
 }
 
+.attrEntry label,
+.entry-item label {
+  color: #444;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.attrEntry input,
+.entry-item input {
+  height: 45px;
+  padding: 0 10px;
+}
+
+/* SignIn/SignUp Styles */
+
 .create p {
   border: 1px solid #0581c8;
   color: #0471af;
@@ -258,19 +276,6 @@ button,
 .localAccount .buttons,
 .create {
   margin-top: 15px;
-}
-
-.entry-item label {
-  color: #444;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.entry-item input {
-  height: 45px;
-  padding: 0 10px;
 }
 
 .password-label {
