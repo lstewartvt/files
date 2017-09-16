@@ -160,6 +160,7 @@ button,
 .entry-item input {
   height: 45px;
   padding: 0 10px;
+  width: 100%;
 }
 
 /* SignIn/SignUp Styles */
@@ -292,4 +293,12 @@ button,
 #attributeList > ul {
   list-style-type: none;
   padding: 0;
+}
+
+.attrEntry .helpLink {
+	visibility: hidden;
+}
+
+.attrEntry .helpLink:before {
+	content: "\f05a";
 }
