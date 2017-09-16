@@ -282,3 +282,9 @@ button,
   position: absolute;
   right: 0;
 }
+
+/* Local Sign Up Styles */
+#attributeList > ul {
+  list-style-type: none;
+  padding: 0;
+}
