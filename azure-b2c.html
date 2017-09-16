@@ -2,67 +2,15 @@
 <html>
   <head>
     <title>Lowe's Canada: Login Page</title>
-    <link rel="stylesheet" type="text/css" href="https://lstewartvt.github.io/files/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://lstewartvt.github.io/files/css/azure-b2c.css">
   </head>
   <body>
     <div class="header"><a class="back" href="https://authoringdev.canadacentral.cloudapp.azure.com/login">Back</a></div>
     <div class="logo"><img alt="Lowe`s" src="https://lstewartvt.github.io/files/images/logo.png"></div>
     <div class="content">
-      <div id="api" data-name="Unified">
-        <div class="social" role="form">
-          <div class="intro">
-            <h2>Sign in with your social account</h2>
-          </div>
-          <div class="options">
-            <div>
-              <button class="accountButton firstButton" id="GoogleExchange" tabindex="1">g+</button>
-            </div>
-            <div>
-              <button class="accountButton" id="FacebookExchange" tabindex="1">fb</button>
-            </div>
-          </div>
-        </div>
-        <div class="divider">
-          <h2>OR</h2>
-        </div>
-        <div class="localAccount" role="form">
-          <div class="intro">
-            <h2>Sign in with your existing account</h2>
-          </div>
-          <div class="error pageLevel" aria-hidden="true" style="display: none;">
-            <p role="alert"></p>
-          </div>
-          <div class="entry">
-            <div class="entry-item">
-              <label for="logonIdentifier">Email Address</label>
-              <div class="error itemLevel" aria-hidden="true" style="display: none;">
-                <p role="alert"></p>
-              </div>
-              <input id="logonIdentifier" type="email" name="LogonIdentifier" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$" placeholder="LogonIdentifier" value="" tabindex="1">
-            </div>
-            <div class="entry-item">
-              <div class="password-label">
-                <label for="password">Password</label><a id="forgotPassword" tabindex="2">Forgot your password?</a>
-              </div>
-              <div class="error itemLevel" aria-hidden="true" style="display: none;">
-                <p role="alert"></p>
-              </div>
-              <input id="password" type="password" name="Password" placeholder="Password" tabindex="1">
-            </div>
-            <div class="working"></div>
-            <div class="buttons">
-              <button id="next" tabindex="1">Sign in</button>
-            </div>
-          </div>
-          <div class="divider">
-            <h2>OR</h2>
-          </div>
-          <div class="create">
-            <p>Don't have an account?<a id="createAccount" tabindex="1">Sign up now</a></p>
-          </div>
-        </div>
-      </div>
+      <div id="api" data-name="Unified"></div>
     </div>
   </body>
 </html>
