@@ -300,13 +300,14 @@ button,
 }
 
 .attrEntry .helpLink {
-  display: none;
+  visibility: hidden;
 }
 
 .attrEntry .helpLink:before {
   content: "\f05a";
-  display: initial;
   font-family: FontAwesome;
   position: relative;
   right: 0;
   top: 0;
+  visibility: initial;
+}
