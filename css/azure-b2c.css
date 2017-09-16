@@ -295,10 +295,18 @@ button,
   padding: 0;
 }
 
+.attrEntry {
+  position: relative;
+}
+
 .attrEntry .helpLink {
-	visibility: hidden;
+  display: none;
 }
 
 .attrEntry .helpLink:before {
-	content: "\f05a";
-}
+  content: "\f05a";
+  display: initial;
+  font-family: FontAwesome;
+  position: relative;
+  right: 0;
+  top: 0;
