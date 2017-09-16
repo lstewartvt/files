@@ -317,3 +317,8 @@ button,
   top: 0;
   visibility: initial;
 }
+
+.buttons input + button,
+.buttons button + button {
+  margin-top: 15px;
+}
