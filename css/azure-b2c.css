@@ -295,11 +295,17 @@ button,
   padding: 0;
 }
 
+#attributeList > ul > li {
+  margin-top: 15px;
+}
+
 .attrEntry {
   position: relative;
 }
 
 .attrEntry .helpLink {
+  display: block;
+  height: 0;
   visibility: hidden;
 }
 
