@@ -343,3 +343,18 @@ button,
   font-size: 22px;
   font-weight: bold;
 }
+
+.title-list {
+  color: #3A3A3A;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul.list > li + li {
+  margin-top: 10px;
+}
+
+ul.list-bullet > li {
+  padding-left: 10px;
+  position: relative;
+}
