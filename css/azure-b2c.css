@@ -391,3 +391,11 @@ ul.list-bullet > li {
   top: 0;
   width: 100%;
 }
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  bottom: 0;
+  padding-bottom: 30px;
+  position: absolute;
+  width: 100%;
+}
