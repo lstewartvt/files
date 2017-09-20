@@ -376,5 +376,10 @@ ul.list-bullet > li {
   color: #0471af;
   content: "Sign In";
   display: block;
+  left: 0;
   line-height: 54px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
 }
