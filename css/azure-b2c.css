@@ -367,12 +367,12 @@ ul.list-bullet > li {
 }
 
 #cancel {
+  border: 1px solid #0581c8;
   color: #ffffff;
   height: 54px;
 }
 
 #cancel:before {
-  border: 1px solid #0581c8;
   color: #0471af;
   content: "Sign In";
   display: block;
