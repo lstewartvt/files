@@ -82,6 +82,10 @@ body {
   }
 }
 
+.header {
+  display: none;
+}
+
 .header .back {
   display: block;
   font-size: 20px;
