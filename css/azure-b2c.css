@@ -59,6 +59,11 @@
   font-style: normal;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
@@ -430,7 +435,12 @@ ul.list-inline > li + li:before {
 .footer {
   border-top: 1px solid #e5e5e5;
   bottom: 0;
+  margin-top: 120px;
   padding-bottom: 30px;
-  position: absolute;
   width: 100%;
+}
+
+.footer .list {
+  color: #686767;
+  font-size: 12px;
 }
