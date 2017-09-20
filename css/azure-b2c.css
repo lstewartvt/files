@@ -298,8 +298,9 @@ button,
 }
 
 /* Local Sign Up Styles */
-#register > .intro {
-  margin-bottom: 40px;
+#register > .intro + .row > [class^="col-"],
+#register > .intro + .row > [class*=" col-"] {
+  padding-top: 40px;
 }
 
 #register #api > .intro {
