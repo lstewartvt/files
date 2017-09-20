@@ -100,8 +100,12 @@ body {
 }
 
 .logo {
-  margin-top: 75px;
+  margin-top: 80px;
   text-align: center;
+}
+
+.logo + .container {
+  margin-top: 48px;
 }
 
 .content {
@@ -321,4 +325,10 @@ button,
 .buttons input + button,
 .buttons button + button {
   margin-top: 15px;
+}
+
+.title-why {
+  color: #004990;
+  font-size: 22px;
+  font-weight: bold;
 }
