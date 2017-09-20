@@ -373,6 +373,41 @@ ul.list-bullet > li {
   position: relative;
 }
 
+ul.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.list-inline > li {
+  display: inline-block;
+  padding: 0 9px;
+  position: relative;
+}
+
+ul.list-inline > li:first-child {
+  padding-left: 0;
+}
+
+ul.list-inline > li:last-child {
+  padding-right: 0;
+}
+
+ul.list-inline > li + li {
+  margin: 0;
+}
+
+ul.list-inline > li + li:before {
+  background-color: #ccc;
+  content: "";
+  height: 13px;
+  width: 1px;
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+}
+
 #cancel {
   border: 1px solid #0581c8;
   color: #ffffff;
