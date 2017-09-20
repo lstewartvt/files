@@ -340,7 +340,8 @@ button,
 }
 
 .buttons input + button,
-.buttons button + button {
+.buttons button + button,
+.buttons button + #cancel {
   margin-top: 15px;
 }
 
@@ -374,6 +375,7 @@ ul.list-bullet > li {
 #cancel {
   border: 1px solid #0581c8;
   color: #ffffff;
+  display: block;
   height: 54px;
 }
 
