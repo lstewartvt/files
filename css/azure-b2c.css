@@ -173,7 +173,8 @@ button,
   max-width: 550px;
 }
 
-.create p {
+.create p,
+#cancel {
   border: 1px solid #0581c8;
   color: #0471af;
   padding: 20px;
@@ -220,10 +221,8 @@ button,
 .social .options button:after {
   color: #fff;
   display: inherit;
-  left: 50px;
-  padding: 15px;
+  left: 55px;
   position: absolute;
-  text-align: left;
   text-transform: uppercase;
   top: 0;
 }
@@ -231,7 +230,9 @@ button,
 .social .options button:before {
   border-right: 1px solid;
   font-family: fontawesome;
-  left: 5px;
+  left: 0;
+  text-align: center;
+  width: 44px;
 }
 
 #FacebookExchange {
