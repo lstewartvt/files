@@ -128,7 +128,8 @@ h2 {
 
 button,
 .header a,
-.create p {
+.create p,
+#cancel {
   background-color: #fff;
   border: none;
   border-radius: 0;
@@ -348,6 +349,11 @@ button,
   color: #3A3A3A;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 20px;
+}
+
+ul.list {
+  margin-top: 15px;
 }
 
 ul.list > li + li {
@@ -357,4 +363,13 @@ ul.list > li + li {
 ul.list-bullet > li {
   padding-left: 10px;
   position: relative;
+}
+
+#cancel {
+  color: #ffffff;
+}
+
+#cancel:before {
+  content: "Sign In";
+  text-align: center;
 }
