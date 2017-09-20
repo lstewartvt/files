@@ -168,6 +168,9 @@ button,
 }
 
 /* SignIn/SignUp Styles */
+#login {
+  max-width: 550px;
+}
 
 .create p {
   border: 1px solid #0581c8;
