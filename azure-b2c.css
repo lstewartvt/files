@@ -1,0 +1,380 @@
+/* Global Styles */
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'DIN Next LT Pro';
+  src: url("../fonts/DIN Regular/DINNextLTPro-Regular.eot");
+  src: url("../fonts/DIN Regular/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN Regular/DINNextLTPro-Regular.woff2") format("woff2"), url("../fonts/DIN Regular/DINNextLTPro-Regular.woff") format("woff"), url("../fonts/DIN Regular/DINNextLTPro-Regular.ttf") format("truetype"), url("../fonts/DIN Regular/DINNextLTPro-Regular.otf") format("opentype"), url("../fonts/DIN Regular/DINNextLTPro-Regular.svg#DINNextLTPro-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro Medium';
+  src: url("../fonts/DIN Medium/DINNextLTPro-Medium.eot");
+  src: url("../fonts/DIN Medium/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN Medium/DINNextLTPro-Medium.woff2") format("woff2"), url("../fonts/DIN Medium/DINNextLTPro-Medium.woff") format("woff"), url("../fonts/DIN Medium/DINNextLTPro-Medium.ttf") format("truetype"), url("../fonts/DIN Medium/DINNextLTPro-Medium.otf") format("opentype"), url("../fonts/DIN Medium/DINNextLTPro-Medium.svg#DINNextLTPro-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro Bold';
+  src: url("../fonts/DIN Bold/DINNextLTPro-Bold.eot");
+  src: url("../fonts/DIN Bold/DINNextLTPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN Bold/DINNextLTPro-Bold.woff2") format("woff2"), url("../fonts/DIN Bold/DINNextLTPro-Bold.woff") format("woff"), url("../fonts/DIN Bold/DINNextLTPro-Bold.ttf") format("truetype"), url("../fonts/DIN Bold/DINNextLTPro-Bold.otf") format("opentype"), url("../fonts/DIN Bold/DINNextLTPro-Bold.svg#DINNextLTPro-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro Light';
+  src: url("../fonts/DIN Light/DINNextLTPro-Light.eot");
+  src: url("../fonts/DIN Light/DINNextLTPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN Light/DINNextLTPro-Light.woff2") format("woff2"), url("../fonts/DIN Light/DINNextLTPro-Light.woff") format("woff"), url("../fonts/DIN Light/DINNextLTPro-Light.ttf") format("truetype"), url("../fonts/DIN Light/DINNextLTPro-Light.otf") format("opentype"), url("../fonts/DIN Light/DINNextLTPro-Light.svg#DINNextLTPro-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro Heavy';
+  src: url("../fonts/DIN Heavy/DINNextLTPro-Heavy.eot");
+  src: url("../fonts/DIN Heavy/DINNextLTPro-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN Heavy/DINNextLTPro-Heavy.woff2") format("woff2"), url("../fonts/DIN Heavy/DINNextLTPro-Heavy.woff") format("woff"), url("../fonts/DIN Heavy/DINNextLTPro-Heavy.ttf") format("truetype"), url("../fonts/DIN Heavy/DINNextLTPro-Heavy.otf") format("opentype"), url("../fonts/DIN Heavy/DINNextLTPro-Heavy.svg#DINNextLTPro-Heavy") format("svg");
+  font-weight: 750;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?4i8cyb");
+  src: url("../fonts/icomoon.eot?4i8cyb#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4i8cyb") format("truetype"), url("../fonts/icomoon.woff?4i8cyb") format("woff"), url("../fonts/icomoon.svg?4i8cyb#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+@media (max-width: 560px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+
+  .content {
+    max-width: 95%;
+  }
+}
+
+.header .back {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  height: 100%;
+  text-align: left;
+  text-decoration: none;
+  text-transform: initial;
+}
+
+.header .back:before {
+  content: "\f053";
+  font-family: fontawesome;
+  font-size: inherit;
+  margin-right: 10px;
+}
+
+.logo {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.logo + .container {
+  margin-top: 48px;
+}
+
+.content {
+  margin: 35px auto;
+  width: 560px;
+}
+
+a {
+  color: #4696c4;
+  font-weight: bold;
+  outline: none;
+  text-decoration: none;
+}
+
+h2 {
+  color: #747373;
+  font-family: "DIN Next LT Pro Medium", sans-serif;
+  font-weight: 400;
+}
+
+button,
+.header a,
+.create p,
+#cancel {
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1;
+  padding: 15px 20px;
+  position: relative;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.header a,
+.buttons button {
+  background-color: #0471af;
+  border-color: #0581c8;
+  color: #fff;
+  padding: 20px;
+}
+
+.attrEntry label,
+.entry-item label {
+  color: #444;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.attrEntry input,
+.entry-item input {
+  height: 45px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* SignIn/SignUp Styles */
+#login {
+  max-width: 550px;
+}
+
+.create p,
+#cancel {
+  border: 1px solid #0581c8;
+  color: #0471af;
+  padding: 20px;
+  text-align: center;
+}
+
+.create p a {
+  margin-left: 5px;
+}
+
+.header a,
+.entry-item input,
+.buttons button,
+.social .options button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.intro h2 {
+  border-bottom: 1px solid #b4b4b4;
+  padding-bottom: 10px;
+}
+
+.social .options {
+  display: table;
+  width: 100%;
+}
+
+.social .options > div {
+  display: table-cell;
+  padding: 10px;
+  width: 50%;
+}
+
+.social .options button {
+  color: transparent;
+  height: 44px;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+
+.social .options button:before,
+.social .options button:after {
+  color: #fff;
+  display: inherit;
+  left: 55px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.social .options button:before {
+  border-right: 1px solid;
+  font-family: fontawesome;
+  left: 0;
+  text-align: center;
+  width: 44px;
+}
+
+#FacebookExchange {
+  background-color: #3b5998;
+}
+
+#GoogleExchange {
+  background-color: #dd4b39;
+}
+
+#MicrosoftAccountExchange {
+  background-color: #2672ec;
+}
+
+#FacebookExchange:before {
+  border-color: #2e4576;
+  content: "\f09a";
+}
+
+#GoogleExchange:before {
+  border-color: #bd3e2f;
+  content: "\f0d5";
+}
+
+#MicrosoftAccountExchange:before {
+  border-color: #2672ec;
+  content: "\f17a";
+}
+
+#FacebookExchange:after {
+  content: "Sign In With Facebook";
+}
+
+#GoogleExchange:after {
+  content: "Sign In With Google+";
+}
+
+#MicrosoftAccountExchange:after {
+  content: "Sign In With Microsoft";
+}
+
+.divider {
+  text-align: center;
+}
+
+.localAccount .entry + .divider {
+  display: none;
+}
+
+.localAccount .entry-item,
+.localAccount .buttons,
+.create {
+  margin-top: 15px;
+}
+
+.password-label {
+  position: relative;
+}
+
+.password-label #forgotPassword {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+/* Local Sign Up Styles */
+#register > .intro {
+  margin-bottom: 40px;
+}
+
+#register #api > .intro {
+  display: none;
+}
+
+#attributeList > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#attributeList > ul > li + li {
+  margin-top: 15px;
+}
+
+.attrEntry {
+  position: relative;
+}
+
+.attrEntry .helpLink {
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.attrEntry .helpLink:before {
+  content: "\f05a";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: initial;
+}
+
+.buttons input + button,
+.buttons button + button {
+  margin-top: 15px;
+}
+
+.title-why {
+  color: #004990;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.title-list {
+  color: #3A3A3A;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+ul.list {
+  margin-top: 15px;
+}
+
+ul.list > li + li {
+  margin-top: 10px;
+}
+
+ul.list-bullet > li {
+  padding-left: 10px;
+  position: relative;
+}
+
+#cancel {
+  color: #ffffff;
+  height: 54px;
+}
+
+#cancel:before {
+  border: 1px solid #0581c8;
+  color: #0471af;
+  content: "Sign In";
+  display: block;
+  line-height: 54px;
+}
