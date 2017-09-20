@@ -307,7 +307,7 @@ button,
   padding: 0;
 }
 
-#attributeList > ul > li {
+#attributeList > ul > li + li {
   margin-top: 15px;
 }
 
