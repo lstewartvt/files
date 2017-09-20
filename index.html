@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lowe's Canada: Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://lstewartvt.github.io/files/css/azure-b2c.css">
+  </head>
+  <body>
+    <div class="header"><a class="back" href="https://authoringdev.canadacentral.cloudapp.azure.com/login">Back</a></div>
+    <div class="logo"><img alt="Lowe`s" src="https://lstewartvt.github.io/files/images/logo.png"></div>
+    <div class="container" id="register">
+      <div class="intro">
+        <h2>Create an Account</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div id="api" data-name="SelfAsserted">
+            <div class="intro">
+              <p>Create your account by providing the following details</p>
+            </div>
+            <div id="attributeVerification">
+              <div class="errorText" id="passwordEntryMismatch" style="display: none;">The password entry fields do not match. Please enter the same password in both fields and try again.</div>
+              <div class="errorText" id="requiredFieldMissing" style="display: none;">A required field is missing. Please fill out all required fields and try again.</div>
+              <div class="errorText" id="fieldIncorrect" style="display: none;">One or more fields are filled out incorrectly. Please check your entries and try again.</div>
+              <div class="errorText" id="claimVerificationServerError" style="display: none;"></div>
+              <div class="attr" id="attributeList">
+                <ul>
+                  <li>
+                    <div class="attrEntry validate">
+                      <div>
+                        <div class="verificationInfoText" id="email_intro" style="display: inline;">Verification is necessary. Please click Send button.</div>
+                        <div class="verificationInfoText" id="email_info" style="display:none;">Verification code has been sent to your inbox. Please copy it to the input box below.</div>
+                        <div class="verificationSuccessText" id="email_success" style="display:none;">E-mail address verified. You can now continue.</div>
+                        <div class="verificationErrorText" id="email_fail_retry" style="display:none;">Incorrect code, try again.</div>
+                        <div class="verificationErrorText" id="email_fail_no_retry" style="display:none;">Exceeded number of retries you need to send new code.</div>
+                        <div class="verificationErrorText" id="email_fail_server" style="display:none;">Server error, please try again</div>
+                        <div class="verificationErrorText" id="email_incorrect_format" style="display:none;">Incorect format.</div>
+                      </div>
+                      <div class="helpText show">This information is required</div>
+                      <label>Email</label>
+                      <input class="textInput" id="email" type="text" placeholder="Email" required="" autofocus=""><a class="helpLink tiny" href="javascript:void(0)" onclick="selfAssertedClient.showHelp('Email address that can be used to contact you.');">What is this?</a>
+                      <div class="buttons verify" claim_id="email">
+                        <div class="working" id="email_ver_wait" style="display: none;"></div>
+                        <label id="email_ver_input_label" for="email_ver_input" style="display: none;">Verification code</label>
+                        <input id="email_ver_input" type="text" placeholder="Verification code" style="display:none;">
+                        <button class="sendButton" id="email_ver_but_send" type="button" style="display: inline;">Send verification code</button>
+                        <button class="verifyButton" id="email_ver_but_verify" type="button" style="display:none;">Verify code</button>
+                        <button class="sendButton" id="email_ver_but_resend" type="button" style="display:none;">Send new code</button>
+                        <button class="editButton" id="email_ver_but_edit" type="button" style="display:none;">Change e-mail</button>
+                        <button class="defaultButton" id="email_ver_but_default" type="button" style="display:none;">Default</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="attrEntry">
+                      <div class="helpText">8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ & * - _ + = [ ] { } | \ : ' , ? / ` ~ " ( ) ; .This information is required</div>
+                      <label>Enter password</label>
+                      <input class="textInput" id="password" type="password" placeholder="Enter password" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*d)|(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])|(?=.*[a-z])(?=.*d)(?=.*[^A-Za-z0-9])|(?=.*[A-Z])(?=.*d)(?=.*[^A-Za-z0-9]))([A-Za-zd@#$%^&amp;*-_+=[]{}|\:',?/`~&quot;();!]|.(?!@)){8,16}$" title="8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ &amp; * - _ + = [ ] { } |  : ' , ? / ` ~ &quot; ( ) ; ." required=""><a class="helpLink tiny" href="javascript:void(0)" onclick="selfAssertedClient.showHelp('Enter password');">What is this?</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="attrEntry">
+                      <div class="helpText"> This information is required</div>
+                      <label>Reenter password</label>
+                      <input class="textInput" id="reenterPassword" type="password" placeholder="Reenter password" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*d)|(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])|(?=.*[a-z])(?=.*d)(?=.*[^A-Za-z0-9])|(?=.*[A-Z])(?=.*d)(?=.*[^A-Za-z0-9]))([A-Za-zd@#$%^&amp;*-_+=[]{}|\:',?/`~&quot;();!]|.(?!@)){8,16}$" title=" " required=""><a class="helpLink tiny" href="javascript:void(0)" onclick="selfAssertedClient.showHelp('Reenter password');">What is this?</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="attrEntry">
+                      <div class="helpText">This information is required</div>
+                      <label>Name</label>
+                      <input class="textInput" id="displayName" type="text" placeholder="Name" required=""><a class="helpLink tiny" href="javascript:void(0)" onclick="selfAssertedClient.showHelp('Your display name.');">What is this?</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="buttons">
+                <button id="continue" disabled="">Create</button>
+                <button id="cancel">Cancel</button>
+              </div>
+            </div>
+            <div class="verifying-modal">
+              <div class="preloader"><img src="https://login.microsoftonline.com/static/img/win8loader.gif" alt="Please wait"></div>
+              <div id="verifying_blurb"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <h2 class="title-why">Why Create an Account?</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
