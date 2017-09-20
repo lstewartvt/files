@@ -294,6 +294,14 @@ button,
 }
 
 /* Local Sign Up Styles */
+#register > .intro {
+  margin-bottom: 40px;
+}
+
+#register #api > .intro {
+  display: none;
+}
+
 #attributeList > ul {
   list-style-type: none;
   padding: 0;
