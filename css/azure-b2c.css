@@ -173,8 +173,7 @@ button,
   max-width: 550px;
 }
 
-.create p,
-#cancel {
+.create p {
   border: 1px solid #0581c8;
   color: #0471af;
   padding: 20px;
