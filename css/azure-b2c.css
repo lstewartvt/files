@@ -72,27 +72,6 @@ body {
   width: 1440px;
 }
 
-@media (max-width: 560px) {
-  .content {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1440px) {
-  body {
-    width: 100%;
-  }
-
-  .content {
-    max-width: 95%;
-  }
-
-  .header + .container,
-  .header + .container-fluid {
-    /*padding: 0;*/
-  }
-}
-
 .header + .container,
 .header + .container-fluid {
   background-color: #ffffff;
@@ -123,6 +102,21 @@ body {
   margin-right: 10px;
 }
 
+@media (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .header + .container,
+  .header + .container-fluid {
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+}
+
 .logo {
   margin-top: 80px;
   text-align: center;
@@ -147,6 +141,7 @@ a {
 h2 {
   color: #747373;
   font-family: "DIN Next LT Pro Medium", sans-serif;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -231,6 +226,13 @@ button,
   display: table-cell;
   padding: 10px;
   width: 50%;
+}
+
+@media (max-width: 560px) {
+  .social .options > div {
+    display: block;
+    width: 100%;
+  }
 }
 
 .social .options button {
@@ -369,7 +371,6 @@ button,
 
 .title-why {
   color: #004990;
-  font-size: 22px;
   font-weight: bold;
 }
 
@@ -457,4 +458,18 @@ ul.list-inline > li + li:before {
 .footer .list {
   color: #686767;
   font-size: 12px;
+}
+
+@media (max-width: 560px) {
+  .footer {
+    margin-top: 75px;
+  }
+
+  .footer .list {
+    text-align: center;
+  }
+
+  .footer .links-left > li + li:before {
+    display: none;
+  }
 }
