@@ -87,8 +87,13 @@ body {
   }
 }
 
+.header + .container {
+  margin-top: 50px;
+}
+
 .header {
-  display: none;
+  background-color: #0471af;
+  padding: 15px;
 }
 
 .header .back {
