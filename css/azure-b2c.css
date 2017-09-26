@@ -336,7 +336,7 @@ button,
 }
 
 .attrEntry .helpLink {
-  display: block;
+  display: none;
   height: 0;
   visibility: hidden;
 }
