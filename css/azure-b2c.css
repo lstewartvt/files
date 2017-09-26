@@ -427,7 +427,7 @@ ul.list-inline > li + li:before {
 
 #cancel:before {
   color: #0471af;
-  content: "Sign In";
+  content: "Already have an account? Sign in";
   display: block;
   left: 0;
   line-height: 54px;
