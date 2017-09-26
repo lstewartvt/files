@@ -61,6 +61,7 @@
 
 html,
 body {
+  background-color: #f2f2f2;
   height: 100%;
 }
 
@@ -85,10 +86,19 @@ body {
   .content {
     max-width: 95%;
   }
+
+  .header + .container,
+  .header + .container-fluid {
+    /*padding: 0;*/
+  }
 }
 
-.header + .container {
-  margin-top: 50px;
+.header + .container,
+.header + .container-fluid {
+  background-color: #ffffff;
+  margin: 50px 40px;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
 
 .header {
@@ -184,6 +194,7 @@ button,
 
 /* SignIn/SignUp Styles */
 #login {
+  margin: 0 auto;
   max-width: 550px;
 }
 
@@ -439,9 +450,7 @@ ul.list-inline > li + li:before {
 
 .footer {
   border-top: 1px solid #e5e5e5;
-  bottom: 0;
-  margin-top: 120px;
-  padding-bottom: 30px;
+  margin-top: 150px;
   width: 100%;
 }
 
