@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- https://alccccnprdam01.blob.core.windows.net/webassets/b2c-assets/ -->
 <html>
   <head>
     <title>Lowe's Canada: Login Page</title>
@@ -7,81 +7,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://lstewartvt.github.io/files/css/azure-b2c.css">
+    <link rel="stylesheet" type="text/css" href="../css/azure-b2c.css">
   </head>
   <body>
-    <div class="header row align-items-center justify-content-center"><img alt="Lowe's logo" src="https://lstewartvt.github.io/files/images/logo-white.png"></div>
-    <div class="container" id="login">
-      <div id="api" data-name="Unified">
-        <div class="social" role="form">
-          <div class="intro">
-            <h2>Sign in with your social account</h2>
-          </div>
-          <div class="options">
-            <div>
-              <button class="accountButton firstButton" id="GoogleExchange" tabindex="1">g+</button>
+    <div class="header row align-items-center justify-content-center"><img alt="Lowe's logo" src="../images/logo-white.png"></div>
+    <div class="container-fluid">
+      <div id="login">
+        <div id="api" data-name="Unified">
+          <div class="social" role="form">
+            <div class="intro">
+              <h2>Sign in with your social account</h2>
             </div>
-            <div>
-              <button class="accountButton" id="FacebookExchange" tabindex="1">fb</button>
-            </div>
-          </div>
-        </div>
-        <div class="divider">
-          <h2>OR</h2>
-        </div>
-        <div class="localAccount" role="form">
-          <div class="intro">
-            <h2>Sign in with your existing account</h2>
-          </div>
-          <div class="error pageLevel" aria-hidden="true" style="display: none;">
-            <p role="alert"></p>
-          </div>
-          <div class="entry">
-            <div class="entry-item">
-              <label for="logonIdentifier">Email Address</label>
-              <div class="error itemLevel" aria-hidden="true" style="display: none;">
-                <p role="alert"></p>
+            <div class="options">
+              <div>
+                <button class="accountButton firstButton" id="GoogleExchange" tabindex="1">g+</button>
               </div>
-              <input id="logonIdentifier" type="email" name="LogonIdentifier" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$" placeholder="LogonIdentifier" value="" tabindex="1">
-            </div>
-            <div class="entry-item">
-              <div class="password-label">
-                <label for="password">Password</label><a id="forgotPassword" tabindex="2">Forgot your password?</a>
+              <div>
+                <button class="accountButton" id="FacebookExchange" tabindex="1">fb</button>
               </div>
-              <div class="error itemLevel" aria-hidden="true" style="display: none;">
-                <p role="alert"></p>
-              </div>
-              <input id="password" type="password" name="Password" placeholder="Password" tabindex="1">
-            </div>
-            <div class="working"></div>
-            <div class="buttons">
-              <button id="next" tabindex="1">Sign in</button>
             </div>
           </div>
           <div class="divider">
             <h2>OR</h2>
           </div>
-          <div class="create">
-            <p>Don't have an account?<a id="createAccount" tabindex="1" href="/pages/account/register/index.html">Sign up now</a></p>
+          <div class="localAccount" role="form">
+            <div class="intro">
+              <h2>Sign in with your existing account</h2>
+            </div>
+            <div class="error pageLevel" aria-hidden="true" style="display: none;">
+              <p role="alert"></p>
+            </div>
+            <div class="entry">
+              <div class="entry-item">
+                <label for="logonIdentifier">Email Address</label>
+                <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                  <p role="alert"></p>
+                </div>
+                <input id="logonIdentifier" type="email" name="LogonIdentifier" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$" placeholder="LogonIdentifier" value="" tabindex="1">
+              </div>
+              <div class="entry-item">
+                <div class="password-label">
+                  <label for="password">Password</label><a id="forgotPassword" tabindex="2">Forgot your password?</a>
+                </div>
+                <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                  <p role="alert"></p>
+                </div>
+                <input id="password" type="password" name="Password" placeholder="Password" tabindex="1">
+              </div>
+              <div class="working"></div>
+              <div class="buttons">
+                <button id="next" tabindex="1">Sign in</button>
+              </div>
+            </div>
+            <div class="divider">
+              <h2>OR</h2>
+            </div>
+            <div class="create">
+              <p>Don't have an account?<a id="createAccount" tabindex="1" href="/pages/account/register/index.html">Sign up now</a></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer container">
-      <div class="row">
-        <div class="col-12 col-sm-8">
-          <ul class="list list-inline">
-            <li>Lowe’s Canada</li>
-            <li>5150 Spectrum Way, Suite 200, Mississauga, ON L4W 5G2</li>
-            <li><a href="mailto:support@lowes.ca">support@lowes.ca</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-sm-4">
-          <ul class="list list-inline">
-            <li><i class="fa fa-shield"></i></li>
-            <li><a href="https://www.lowes.ca/articles/lowes-companies-canada-ulc-privacy-statement_a757.html">Privacy Policy</a></li>
-            <li><a href="https://www.lowes.ca/articles/Terms-of-Use_a742.html">Terms &amp; Conditions</a></li>
-          </ul>
+      <div class="footer container">
+        <div class="row">
+          <div class="col-12 col-sm-8">
+            <ul class="list list-inline">
+              <li>Lowe’s Canada</li>
+              <li>5150 Spectrum Way, Suite 200, Mississauga, ON L4W 5G2</li>
+              <li><a href="mailto:support@lowes.ca">support@lowes.ca</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4">
+            <ul class="list list-inline">
+              <li><i class="fa fa-shield"></i></li>
+              <li><a href="https://www.lowes.ca/articles/lowes-companies-canada-ulc-privacy-statement_a757.html">Privacy Policy</a></li>
+              <li><a href="https://www.lowes.ca/articles/Terms-of-Use_a742.html">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
