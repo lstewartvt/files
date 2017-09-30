@@ -181,7 +181,9 @@ button,
 }
 
 .attrEntry input[type=text],
-.entry-item input[type=text] {
+.entry-item input[type=text],
+.attrEntry input[type=password],
+.entry-item input[type=password] {
   border: 1px solid #ccc;
   height: 45px;
   padding: 0 10px;
