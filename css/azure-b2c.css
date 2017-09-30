@@ -180,6 +180,11 @@ button,
   margin-bottom: 10px;
 }
 
+.attrEntry input[type=checkbox] + label,
+.entry-item input[type=checkbox] + label {
+  display: initial;
+}
+
 .attrEntry input[type=text],
 .entry-item input[type=text],
 .attrEntry input[type=email],
