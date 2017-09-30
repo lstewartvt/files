@@ -74,7 +74,7 @@ body {
 
 .header + .container,
 .header + .container-fluid {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 50px 40px;
   padding-bottom: 30px;
   padding-top: 50px;
@@ -82,7 +82,7 @@ body {
 
 .header {
   background-color: #0471af;
-  margin: 0;
+  padding: 15px;
 }
 
 .header .back {
@@ -147,7 +147,7 @@ h2 {
 
 button,
 .header a,
-.create p,
+.create p a,
 #cancel {
   background-color: #fff;
   border: none;
@@ -180,10 +180,9 @@ button,
   margin-bottom: 10px;
 }
 
-.attrEntry input,
-.entry-item input {
+.attrEntry input[type=text],
+.entry-item input[type=text] {
   border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   height: 45px;
   padding: 0 10px;
   width: 100%;
@@ -196,14 +195,14 @@ button,
 }
 
 .create p {
-  border: 1px solid #0581c8;
-  color: #0471af;
-  padding: 20px;
   text-align: center;
 }
 
 .create p a {
-  margin-left: 5px;
+  border: 1px solid #0581c8;
+  color: #0471af;
+  display: block;
+  padding: 20px;
 }
 
 .header a,
@@ -434,7 +433,7 @@ ul.list-inline > li + li:before {
 
 #cancel {
   border: 1px solid #0581c8;
-  color: #fff;
+  color: #ffffff;
   display: block;
   height: 54px;
 }
@@ -474,4 +473,40 @@ ul.list-inline > li + li:before {
   .footer .links-left > li + li:before {
     display: none;
   }
+}
+
+/* Error Styles*/
+.error.pageLevel {
+  border: 1px solid #ccc;
+  border-top: 4px solid #dd0637;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+
+.error.pageLevel p,
+.error.itemLevel p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error.pageLevel p:before {
+  color: #dd0637;
+  content: "\f071";
+  font-family: FontAwesome;
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+.error.pageLevel p:first-of-type:before {
+  visibility: visible;
+}
+
+.error.itemLevel {
+  background-color: #f2dede;
+  border: 1px solid #ebcccc;
+  border-radius: .25rem;
+  color: #a94442;
+  margin-bottom: 1rem;
+  padding: .25rem 1.25rem;
 }
