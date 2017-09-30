@@ -182,6 +182,8 @@ button,
 
 .attrEntry input[type=text],
 .entry-item input[type=text],
+.attrEntry input[type=email],
+.entry-item input[type=email],
 .attrEntry input[type=password],
 .entry-item input[type=password] {
   border: 1px solid #ccc;
