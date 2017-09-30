@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://lstewartvt.github.io/files/css/azure-b2c.css">
+    <link rel="stylesheet" type="text/css" href="../css/azure-b2c.css">
   </head>
   <body>
-    <div class="header row align-items-center text-center"><a href="https://www.lowes.ca"><img alt="Lowe's logo" src="https://lstewartvt.github.io/files/images/logo-white.png"></a></div>
+    <div class="header row align-items-center justify-content-center"><img alt="Lowe's logo" src="../images/logo-white.png"></div>
     <div class="container-fluid">
       <div id="login">
         <div id="api" data-name="Unified">
@@ -34,20 +34,22 @@
             <div class="intro">
               <h2>Sign in with your existing account</h2>
             </div>
-            <div class="error pageLevel" aria-hidden="true" style="display: none;">
-              <p role="alert"></p>
+            <div class="error pageLevel" aria-hidden="true">
+              <p role="alert">Component Level Error 1</p>
+              <p role="alert">Component Level Error 2</p>
+              <p role="alert">Component Level Error 3</p>
             </div>
             <div class="entry">
               <div class="entry-item">
                 <label for="logonIdentifier">Email Address</label>
-                <div class="error itemLevel" aria-hidden="true" style="display: none;">
-                  <p role="alert"></p>
+                <div class="error itemLevel" aria-hidden="true">
+                  <p role="alert">Field Level Error</p>
                 </div>
                 <input id="logonIdentifier" type="email" name="LogonIdentifier" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$" placeholder="LogonIdentifier" value="" tabindex="1">
               </div>
               <div class="entry-item">
                 <div class="password-label">
-                  <label for="password">Password</label><a id="forgotPassword" href="/pages/account/reset-password/index.html" tabindex="2">Forgot your password?</a>
+                  <label for="password">Password</label><a id="forgotPassword" tabindex="2">Forgot your password?</a>
                 </div>
                 <div class="error itemLevel" aria-hidden="true" style="display: none;">
                   <p role="alert"></p>
@@ -79,7 +81,6 @@
           </div>
           <div class="col-12 col-sm-4">
             <ul class="list list-inline">
-              <li><i class="fa fa-shield"></i></li>
               <li><a href="https://www.lowes.ca/articles/lowes-companies-canada-ulc-privacy-statement_a757.html">Privacy Policy</a></li>
               <li><a href="https://www.lowes.ca/articles/Terms-of-Use_a742.html">Terms &amp; Conditions</a></li>
             </ul>
